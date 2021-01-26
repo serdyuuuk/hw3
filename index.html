@@ -15,38 +15,10 @@
         <div class="bl-row">
             <div class="bl-products">
                 <div class="bl-textPlace">
-                    <input class="bl-productName" type="text" value="Помідори">
+                    <input class="bl-productName" type="text" value="">
                 </div>
                 <div class="bl-count">
-                    <button class="bl-minus" data-tooltip="Зменшує кількість на 1">-</button>
-                    <span class="bl-label">3</span>
-                    <button class="bl-plus" data-tooltip="Збільшує кількість на 1">+</button>
-                </div>
-                <div class="bl-buttons">
-                    <button class="bl-buy"  data-tooltip="Додати товар в Куплене">Куплене</button>
-                    <button class="bl-delete" data-tooltip="Видалити товар з списку">x</button>
-                </div>
-            </div>
-            <div class="bl-products">
-                <div class="bl-textPlace">
-                    <input class="bl-productName" type="text" value="Огірки">
-                </div>
-                <div class="bl-count">
-                    <button class="bl-minus" data-tooltip="Зменшує кількість на 1">-</button>
-                    <span class="bl-label">5</span>
-                    <button class="bl-plus" data-tooltip="Збільшує кількість на 1">+</button>
-                </div>
-                <div class="bl-buttons">
-                    <button class="bl-buy"  data-tooltip="Додати товар в Куплене">Куплене</button>
-                    <button class="bl-delete" data-tooltip="Видалити товар з списку">x</button>
-                </div>
-            </div>
-            <div class="bl-products">
-                <div class="bl-textPlace">
-                    <input class="bl-productName" type="text" value="Яблука">
-                </div>
-                <div class="bl-count">
-                    <button class="bl-minus" data-tooltip="Зменшує кількість на 1">-</button>
+                    <button class="bl-minus" data-tooltip="Зменшує кількість на 1" disabled>-</button>
                     <span class="bl-label">1</span>
                     <button class="bl-plus" data-tooltip="Збільшує кількість на 1">+</button>
                 </div>
@@ -85,4 +57,9 @@
 </body>
 <script type="text/javascript"src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript"src="main.js"> </script>
+<script>
+    addProduct("Помідори");
+    addProduct("Огірки");
+    addProduct("Печиво");
+</script>
 </html>
