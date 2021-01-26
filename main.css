@@ -1,0 +1,356 @@
+* {
+    font-size: 103%;
+    font-weight: bold;
+    font-family: monospace;
+    vertical-align: middle
+}
+
+body {
+    overflow-y: scroll;
+    height: 100%;
+    background: #cdcbcb;
+    min-width: 250px;
+}
+
+.bl-background {
+    text-align: center;
+    min-width: 100%;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.bl-list {
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 5% 10px 10px;
+    width: 55%;
+    background: white;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 800px;
+}
+
+@media (max-width: 830px) {
+    .bl-list {
+        width: 95%;
+        max-width: 95%;
+        min-width: 500px;
+    }
+}
+
+.bl-add {
+    padding: 20px 10px;
+}
+
+.bl-text {
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 10px 0 0 10px;
+    display: inline-block;
+    width: 70%;
+    height: 50px;
+    border-width: 1px;
+    border-color: lightgrey;
+    text-indent: 5px;
+}
+
+.bl-addButton {
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 0 10px 10px 0;
+    display: block;
+    width: 30%;
+    height: 50px;
+    color: white;
+    background: cadetblue;
+    border: 0;
+    float: right;
+}
+
+.bl-addButton:active {
+    background: #4f8385;
+}
+
+.bl-products {
+    text-align: center;
+    float: bottom;
+    border-style: solid;
+    border-width: 0;
+    border-top-width: 1px;
+    border-color: lightgrey;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bl-textPlace {
+    box-sizing: border-box;
+    max-height: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 33%;
+    float: left;
+    text-align: left;
+}
+
+.bl-productName {
+    width: 70%;
+    font-weight: bold;
+    border: 0;
+    height: 40px;
+    text-indent: 5px;
+}
+
+.bl-productName:active {
+    border-width: 3px;
+}
+
+.bl-count {
+    box-sizing: border-box;
+    text-align: center;
+    width: 33%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+
+.bl-plus {
+    outline: none;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background: green;
+    border: 0;
+    box-shadow: inset 0 -3px 0 #005300;
+}
+
+.bl-plus:active {
+    background: #006700;
+}
+
+.bl-label {
+    border-radius: 10px;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: #cdcbcb;
+    color: #393939;
+}
+
+.bl-minus {
+    outline: none;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background: #db2828;
+    border: 0;
+    box-shadow: inset 0 -3px 0 #a42020;
+}
+
+.bl-minus:active {
+    background: #c12020;;
+}
+
+.bl-buttons {
+    box-sizing: border-box;
+    text-align: right;
+    width: 33%;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: right;
+}
+
+.bl-buy {
+    outline: none;
+    border-radius: 10px;
+    display: inline-block;
+    height: 40px;
+    border: 0;
+    background: #d3d3d3;
+    box-shadow: inset 0 -3px 0 gray;
+    color: #393939;
+}
+
+.bl-buy:active {
+    background: #aeaeae;
+}
+
+.bl-delete {
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    height: 40px;
+    width: 40px;
+    background: #db2828;
+    border: 0;
+    box-shadow: inset 0 -3px 0 #a42020;
+}
+
+.bl-delete:active {
+    background: #c12020;
+}
+
+
+.bl-bought {
+    box-sizing: border-box;
+    border-radius: 5px;
+    max-width: 800px;
+    vertical-align: top;
+    text-align: left;
+    margin: 5% 10px 10px;
+    background: white;
+    width: 30%;
+    display: inline-block;
+}
+
+@media (max-width: 830px) {
+    .bl-bought {
+        width: 95%;
+        max-width: 95%;
+        min-width: 500px;
+    }
+}
+
+.bl-title {
+    font-size: 150%;
+    padding: 20px;
+}
+
+.bl-productsLeft {
+    display: block;
+    padding: 20px;
+    border-style: solid;
+    border-width: 0;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-color: lightgrey;
+}
+
+.bl-leftProduct {
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
+    background: #d3d3d3;
+    display: inline-block;
+}
+
+.bl-nameOfProduct {
+    display: inline-block;
+    color: #393939;
+}
+
+.bl-productsNumber {
+    display: inline-block;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: orange;
+    color: white;
+    padding: 3px;
+}
+
+.bl-alreadyBought {
+    display: block;
+    padding: 20px;
+    border-style: solid;
+    border-width: 0;
+    border-top-width: 1px;
+    border-color: lightgrey;
+}
+
+.bl-badge {
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    background: darkviolet;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    line-height: 3px;
+    height: 8px;
+    text-align: justify;
+    transition: all 1s ease;
+
+}
+
+.bl-badge:hover {
+    background: blue;
+    height: 40px;
+}
+
+.bl-badge:hover .bl-hidden {
+    visibility: visible;
+}
+
+.bl-hidden {
+    font-weight: normal;
+    visibility: hidden;
+}
+
+[data-tooltip] {
+position: relative;
+}
+
+[data-tooltip]::before {
+    text-align: center;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom: 105%;
+    background: darkviolet;
+    color: white;
+    visibility: hidden;
+    content: attr(data-tooltip);
+    border-radius: 10px;
+    opacity: 0;
+    font-size: 0;
+    transition: 1s;
+}
+
+[data-tooltip]:hover::before {
+    width: 160px;
+    height: 15px;
+    opacity: 1;
+    visibility: visible;
+    font-size: 70%;
+}
+
+@media print {
+
+    .bl-list {
+        width: 63%;
+        min-width: 0%;
+    }
+
+    .bl-bought{
+        width: 30%;
+        min-width: 0%;
+    }
+
+    .bl-badge {
+        padding: 0px 10px 10px;
+        background: white;
+        border: 3px solid darkviolet;
+        color: white;
+        height: 30px;
+        line-height: 0;
+    }
+
+    .bl-notHidden {
+        display: none;
+    }
+
+    .bl-hidden {
+        font-size: medium;
+        color: black;
+        visibility: visible;
+    }
+
+}
