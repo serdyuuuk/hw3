@@ -1,6 +1,8 @@
 var LIST = $('.bl-row');
-var ITEM_TEMPLATE = "<div class=\"bl-products\">"+$('.bl-products').html()+"</div>";
-function addProduct(title){
+var ITEM_TEMPLATE = "<div class=\"bl-products\">" + $('.bl-products').html() + "</div>";
+var LEFT_PRODUCT = "<div class=\"bl-leftProduct\">"+$('.bl-leftProduct').html()+ "</div>"
+
+function addProduct(title) {
     var node = $(ITEM_TEMPLATE);
     node.css("display", "block");
     $(this).parent().find(".bl-text").val("");
@@ -32,12 +34,19 @@ function addProduct(title){
             $(this).remove();
         });
     });
+    var leftProductNode = $(LEFT_PRODUCT);
+    leftProductNode.find(".bl-nameOfProduct").text(title);
+    leftProductNode.css("display", "inline-block");
+    leftProductNode.attr('id',title);
     if (title) {
         LIST.append(node);
+        $(".bl-productsLeft").append(leftProductNode);
     }
 }
+
 $(".bl-addButton").click(function () {
     var name = $(this).parent().find(".bl-text").val();
     addProduct(name);
+    $(this).parent().find(".bl-text").val("");
     $(this).parent().find(".bl-text").focus();
 });

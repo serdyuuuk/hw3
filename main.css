@@ -235,10 +235,11 @@ body {
 .bl-leftProduct {
     text-align: center;
     border-radius: 10px;
-    margin-bottom: 5px;
     padding: 10px;
     background: #d3d3d3;
-    display: inline-block;
+    display: none;
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
 
 .bl-nameOfProduct {
