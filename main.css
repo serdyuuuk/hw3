@@ -83,7 +83,7 @@ body {
     padding-right: 10px;
 }
 
-.bl-id{
+.bl-id {
     display: none;
 }
 
@@ -270,7 +270,7 @@ body {
     border-color: lightgrey;
 }
 
-.bl-boughtProduct{
+.bl-boughtProduct {
     display: none;
     text-align: center;
     border-radius: 10px;
@@ -283,7 +283,7 @@ body {
 .bl-boughtProduct .bl-nameOfProduct {
     display: inline-block;
     color: #393939;
-    text-decoration:line-through;
+    text-decoration: line-through;
 }
 
 .bl-boughtProduct .bl-productsNumber {
@@ -294,7 +294,7 @@ body {
     background: orange;
     color: white;
     padding: 3px;
-    text-decoration:line-through;
+    text-decoration: line-through;
 }
 
 .bl-badge {
@@ -326,7 +326,7 @@ body {
 }
 
 [data-tooltip] {
-position: relative;
+    position: relative;
 }
 
 [data-tooltip]::before {
@@ -334,8 +334,8 @@ position: relative;
     width: 0;
     height: 0;
     position: absolute;
-    left:50%;
-    transform:translateX(-50%);
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 105%;
     background: darkviolet;
     color: white;
@@ -362,7 +362,7 @@ position: relative;
         min-width: 0%;
     }
 
-    .bl-bought{
+    .bl-bought {
         width: 30%;
         min-width: 0%;
     }

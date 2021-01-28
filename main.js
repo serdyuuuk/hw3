@@ -43,7 +43,7 @@ function addProduct(title) {
 function updateValue() {
     var idOfProduct = "#" + $(this).parent().parent().find(".bl-id").text();
     $(idOfProduct).find(".bl-nameOfProduct").text($(this).val());
-    $(idOfProduct+"Bought").find(".bl-nameOfProduct").text($(this).val());
+    $(idOfProduct + "Bought").find(".bl-nameOfProduct").text($(this).val());
 }
 
 function clickMinus() {
@@ -55,7 +55,7 @@ function clickMinus() {
     }
     var idOfProduct = "#" + $(this).parent().parent().find(".bl-id").text();
     $(idOfProduct).find(".bl-productsNumber").text($(this).parent().find(".bl-label").text());
-    $(idOfProduct+"Bought").find(".bl-productsNumber").text($(this).parent().find(".bl-label").text());
+    $(idOfProduct + "Bought").find(".bl-productsNumber").text($(this).parent().find(".bl-label").text());
 }
 
 function clickPlus() {
@@ -65,7 +65,7 @@ function clickPlus() {
     $(this).parent().find(".bl-minus").css("box-shadow", "inset 0 -3px 0 #a42020");
     var idOfProduct = "#" + $(this).parent().parent().find(".bl-id").text();
     $(idOfProduct).find(".bl-productsNumber").text($(this).parent().find(".bl-label").text());
-    $(idOfProduct+"Bought").find(".bl-productsNumber").text($(this).parent().find(".bl-label").text());
+    $(idOfProduct + "Bought").find(".bl-productsNumber").text($(this).parent().find(".bl-label").text());
 }
 
 function clickBuy() {
@@ -109,19 +109,19 @@ function clickBuy() {
 }
 
 function clickDelete() {
-    $(this).parent().parent().slideUp(500,function () {
+    $(this).parent().parent().slideUp(500, function () {
         $(this).remove();
     })
     var idOfProduct = "#" + $(this).parent().parent().find(".bl-id").text();
     $(idOfProduct).fadeOut(500, function () {
         $(this).remove();
     });
-    $(idOfProduct+"Bought").fadeOut(500, function () {
+    $(idOfProduct + "Bought").fadeOut(500, function () {
         $(this).remove();
     });
 }
 
-$(".bl-addButton").click(function (){
+$(".bl-addButton").click(function () {
     var name = $(this).parent().find(".bl-text").val();
     addProduct(name);
     $(this).parent().find(".bl-text").val("");
