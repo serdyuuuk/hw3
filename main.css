@@ -83,6 +83,10 @@ body {
     padding-right: 10px;
 }
 
+.bl-id{
+    display: none;
+}
+
 .bl-textPlace {
     box-sizing: border-box;
     max-height: 20px;
@@ -264,6 +268,33 @@ body {
     border-width: 0;
     border-top-width: 1px;
     border-color: lightgrey;
+}
+
+.bl-boughtProduct{
+    display: none;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    background: #d3d3d3;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.bl-boughtProduct .bl-nameOfProduct {
+    display: inline-block;
+    color: #393939;
+    text-decoration:line-through;
+}
+
+.bl-boughtProduct .bl-productsNumber {
+    display: inline-block;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: orange;
+    color: white;
+    padding: 3px;
+    text-decoration:line-through;
 }
 
 .bl-badge {
