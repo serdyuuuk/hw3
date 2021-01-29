@@ -119,6 +119,7 @@ function clickDelete() {
     $(idOfProduct + "Bought").fadeOut(500, function () {
         $(this).remove();
     });
+    $(this).removeAttr("data-tooltip");
 }
 
 $(".bl-addButton").click(function () {
