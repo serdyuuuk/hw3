@@ -75,7 +75,7 @@ function clickBuy() {
             $(this).find(".bl-plus").css("display", "none");
             $(this).find(".bl-minus").css("display", "none");
             $(this).find(".bl-productName").css("text-decoration", "line-through");
-            $(this).find(".bl-productName").attr('readonly', 'readonly');
+            $(this).find(".bl-productName").prop('readonly', true);
             $(this).find(".bl-buy").text("Не куплено");
             $(this).find(".bl-buy").attr("data-tooltip", "Повернути в Залишилося");
         });
@@ -93,7 +93,7 @@ function clickBuy() {
             $(this).find(".bl-plus").css("display", "inline-block");
             $(this).find(".bl-minus").css("display", "inline-block");
             $(this).find(".bl-productName").css("text-decoration", "none");
-            $(this).find(".bl-productName").attr('read-write', 'read-write');
+            $(this).find(".bl-productName").prop('readonly',false);
             $(this).find(".bl-buy").text("Куплено");
             $(this).find(".bl-buy").attr("data-tooltip", "Додати товар в Куплене");
         });
